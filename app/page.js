@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Event from "./event";
+import Social from "./social";
 export default function Home() {
   return (
     <>
       <div className="flex items-start justify-center min-h-screen bg-no-repeat bg-cover background">
         <div className="flex flex-col h-[100vh] justify-between items-center layer space-y-12 py-20">
           <div className="shadow-xl rounded-full bg-white p-[1px]">
-            <div className="relative w-96 h-96 lg:w-56 lg:h-56">
+            <div className="relative w-96 h-96 lg:w-48 lg:h-48">
               <Image src={"/logo.png"} alt="logo" fill />
             </div>
           </div>
@@ -39,6 +40,9 @@ export default function Home() {
       </div>
       <div id="Events">
         <Event />
+      </div>
+      <div id="Social">
+        <Social />
       </div>
     </>
   );

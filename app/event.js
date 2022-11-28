@@ -32,25 +32,39 @@ export default async function Event() {
       <div className="flex flex-col w-full lg:grid lg:grid-cols-4 grid-row-auto gap-4 my-4 mx-8 px-8">
         {data.data?.map((event, index) => {
           return (
-            <div className="shadow-md rounded-sm bg-white" key={index}>
-              <div className="w-full h-96 lg:h-56 relative">
+            <div className="shadow-md rounded-lg bg-white" key={index}>
+              <div className="w-full h-[30rem] lg:h-56 relative">
                 <Image
-                  className="bg-cover rounded-t-sm"
+                  className="w-full rounded-t-lg h-56 object-fill"
                   src={
                     "https://api.meetupswala.xyz/events/image?image=" +
                     event.coverImage
                   }
                   alt={event.name}
-                  fill={true}
+                  sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 100vw,
+              100vw"
+                  fill
                 />
               </div>
-              <div className="m-3">
-                <h1 className="font-semibold text-2xl lg:text-lg truncate">
+              <div className="lg:mx-2 lg:my-2 mx-6 my-8">
+                <h1 className="font-semibold text-5xl lg:text-lg truncate pb-3 lg:pb-1">
                   {event.name}
                 </h1>
-                <h1 className="font-normal text-xl lg:text-base text-gray-600">
+                <h1 className="font-normal text-4xl lg:text-base text-gray-600">
                   {moment(event.eventDate).format("MMMM Do YYYY")}
                 </h1>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={event.registrationLink}
+                  className="flex flex-row justify-end items-center">
+                  <button
+                    type=""
+                    className="bg-gray-900 w-96 lg:w-32 py-4 lg:py-1 text-white rounded-xl lg:text-base text-5xl uppercase">
+                    Register
+                  </button>
+                </a>
               </div>
             </div>
           );
@@ -61,7 +75,7 @@ export default async function Event() {
           Sorry 🥺 there is no upcoming events
         </h1>
       )}
-      <p className="text-xl">
+      <p className="lg:text-xl text-3xl">
         Powered by{" "}
         <a
           className="font-bold underline"
