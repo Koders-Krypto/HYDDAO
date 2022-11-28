@@ -1,11 +1,17 @@
 import "./globals.css";
-import { Silkscreen } from "@next/font/google";
+import { Poppins } from "@next/font/google";
 
-const silkscreen = Silkscreen({ weight: ["400", "700"] });
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={silkscreen.className}>
+    <html lang="en" className={poppins.className}>
+      <head>
+        <title>Hyderabad DAO</title>
+        <link rel="icon" type="image/x-icon" href="/logo.png" />
+      </head>
       <body>{children}</body>
     </html>
   );
