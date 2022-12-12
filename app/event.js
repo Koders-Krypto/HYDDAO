@@ -9,14 +9,14 @@ async function getData() {
     },
     body: JSON.stringify({
       tag: null,
-      city: 2,
+      city: 17, //Hyderabad city code 17
       offset: 0,
       query: "",
     }),
   });
-  //17 Hyderabad
+
   const content = await rawResponse.json();
-  console.log(content);
+
   return content;
 }
 
@@ -26,7 +26,7 @@ export default async function Event() {
   return (
     <div className="flex flex-col justify-center items-center py-8">
       <h1 className="lg:text-3xl text-5xl pb-6 pt-10 lg:pt-0 lg:pb-0">
-        Upcoming Events in <strong className="underline">Hyderabad</strong>
+        Upcoming Events in <strong>Hyderabad</strong>
       </h1>
 
       <div className="flex flex-col w-full lg:grid lg:grid-cols-4 grid-row-auto gap-4 my-4 mx-8 px-8">
@@ -71,7 +71,7 @@ export default async function Event() {
         })}
       </div>
       {data.status === "Failure" && (
-        <h1 className="text-2xl pb-20 pt-12">
+        <h1 className="text-5xl pb-20 pt-12 text-center">
           Sorry 🥺 there is no upcoming events
         </h1>
       )}

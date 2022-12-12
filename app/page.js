@@ -11,7 +11,7 @@ export default function Home() {
               <Image src={"/logo.png"} alt="logo" fill />
             </div>
           </div>
-          <h1 className="lg:text-5xl text-7xl text-center text-white uppercase w-full lg:w-3/4 px-8">
+          <h1 className="text-7xl lg:text-7xl text-center text-white uppercase w-full lg:w-3/4 px-8">
             Just a bunch of 🤟 #Web3 enthusiasts from Hyderabad.
           </h1>
 
@@ -19,7 +19,7 @@ export default function Home() {
             Let{"'"}s make Hyderabad Web3 capital of India.
             <span className="pt-6"> #WAGBI 🚀</span>
           </h2>
-          <a href="#Events">
+          <a href="#events">
             <div className="border-[4px] lg:border-[1px]  px-4 py-6 animate-pulse cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div id="Events">
+      <div id="events">
         <Event />
       </div>
       <div id="Social">
