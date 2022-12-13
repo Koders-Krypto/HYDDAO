@@ -11,14 +11,23 @@ export default function Home() {
               <Image src={"/logo.png"} alt="logo" fill />
             </div>
           </div>
-          <h1 className="text-7xl lg:text-7xl text-center text-white uppercase w-full lg:w-3/4 px-8">
-            Just a bunch of 🤟 #Web3 enthusiasts from Hyderabad.
+          <h1 className="text-7xl lg:text-7xl text-center text-white font-bold uppercase w-full lg:w-3/4 px-8">
+            Largest Web3 community in Hyderabad
           </h1>
-
-          <h2 className="flex flex-col text-6xl lg:text-4xl text-center text-white">
-            Let{"'"}s make Hyderabad Web3 capital of India.
+          <ul className="text-white space-x-8 text-3xl lg:text-2xl uppercase">
+            <l1>Builders</l1>
+            <l1>|</l1>
+            <l1>Founders</l1>
+            <l1>|</l1>
+            <l1>Artists</l1>
+            <l1>|</l1>
+            <l1>& More</l1>
+          </ul>
+          <h2 className="flex flex-col text-center text-white text-3xl lg:text-2xl">
+            Let{"'"}s make Hyderabad Web3 capital of India
             <span className="pt-6"> #WAGBI 🚀</span>
           </h2>
+
           <a href="#events">
             <div className="border-[4px] lg:border-[1px]  px-4 py-6 animate-pulse cursor-pointer">
               <svg

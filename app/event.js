@@ -75,7 +75,7 @@ export default async function Event() {
           Sorry 🥺 there is no upcoming events
         </h1>
       )}
-      <p className="lg:text-xl text-3xl">
+      <p className="lg:text-base text-2xl">
         Powered by{" "}
         <a
           className="font-bold underline"

@@ -10,6 +10,12 @@ html {
 .background {
   background-image: url("/charminar.jpg");
   position: relative;
+  background-position: center;
+}
+.background-skyline {
+  background-image: url("/hyderabad-skyline.jpg");
+  position: relative;
+  background-position: center;
 }
 .layer {
   background-color: rgba(0, 0, 0, 0.7);
