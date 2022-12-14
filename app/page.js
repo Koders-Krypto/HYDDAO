@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Event from "./event";
+import Footer from "./footer";
 import Social from "./social";
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
       <div id="Social">
         <Social />
       </div>
+      <Footer />
     </>
   );
 }

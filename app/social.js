@@ -1,6 +1,6 @@
 export default function Social() {
   return (
-    <div className="bg-gray-900 rounded-3xl md:mx-8 lg:mx-20 my-8 py-16 px-12 shadow-2xl">
+    <div className="bg-gray-900 rounded-3xl md:mx-8 lg:mx-20 my-8 py-16 px-12 mt-48 shadow-2xl">
       <div className="flex md:flex-col lg:flex-row justify-between md:items-baseline lg:items-center w-full">
         <div className="md:w-full lg:w-1/2 md:mb-8 lg:mb-0">
           <h1 className="text-white font-bold text-6xl">Join the community</h1>
