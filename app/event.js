@@ -61,7 +61,7 @@ export default async function Event() {
                   className="flex flex-row justify-end items-center">
                   <button
                     type=""
-                    className="bg-gray-900 w-96 lg:w-32 py-4 lg:py-1 text-white rounded-xl lg:text-base text-5xl uppercase">
+                    className="bg-gray-900 md:w-96 lg:w-32 py-4 lg:py-1 text-white rounded-xl lg:text-base text-5xl uppercase">
                     Register
                   </button>
                 </a>
