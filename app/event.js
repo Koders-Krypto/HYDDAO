@@ -24,16 +24,16 @@ export default async function Event() {
   const data = await getData();
 
   return (
-    <div className="flex flex-col justify-center items-center py-8">
-      <h1 className="lg:text-3xl text-5xl pb-6 pt-10 lg:pt-0 lg:pb-0">
+    <div className="flex flex-col justify-center items-center py-8 px-6">
+      <h1 className="text-4xl pb-4 text-center">
         Upcoming Events in <strong>Hyderabad</strong>
       </h1>
 
-      <div className="flex flex-col w-full lg:grid lg:grid-cols-4 grid-row-auto gap-4 my-4 mx-8 px-8">
+      <div className="flex flex-col w-full md:grid md:grid-cols-4 grid-row-auto gap-4 my-4 mx-0 md:mx-8 px-0 md:px-8">
         {data.data?.map((event, index) => {
           return (
             <div className="shadow-md rounded-lg bg-white" key={index}>
-              <div className="w-full h-[30rem] lg:h-56 relative">
+              <div className="w-full h-56 relative">
                 <Image
                   className="w-full rounded-t-lg h-56 object-fill"
                   src={
@@ -47,11 +47,11 @@ export default async function Event() {
                   fill
                 />
               </div>
-              <div className="lg:mx-2 lg:my-2 mx-6 my-8">
-                <h1 className="font-semibold text-5xl lg:text-lg truncate pb-3 lg:pb-1">
+              <div className="mx-4 my-6 md:my-3 md:mx-2">
+                <h1 className="font-semibold text-xl truncate pb-3 md:pb-1">
                   {event.name}
                 </h1>
-                <h1 className="font-normal text-4xl lg:text-base text-gray-600">
+                <h1 className="font-normal text-base text-gray-600">
                   {moment(event.eventDate).format("MMMM Do YYYY")}
                 </h1>
                 <a
@@ -61,7 +61,7 @@ export default async function Event() {
                   className="flex flex-row justify-end items-center">
                   <button
                     type=""
-                    className="bg-gray-900 md:w-96 lg:w-32 py-4 lg:py-1 text-white rounded-xl lg:text-base text-5xl uppercase">
+                    className="bg-gray-900 py-3 px-6 text-white rounded-xl text-base uppercase">
                     Register
                   </button>
                 </a>
@@ -71,11 +71,11 @@ export default async function Event() {
         })}
       </div>
       {data.status === "Failure" && (
-        <h1 className="text-5xl pb-20 pt-12 text-center">
+        <h1 className="text-2xl pb-20 pt-12 text-center">
           Sorry 🥺 there is no upcoming events
         </h1>
       )}
-      <p className="lg:text-base text-2xl">
+      <p className="text-base text-center">
         Powered by{" "}
         <a
           className="font-bold underline"

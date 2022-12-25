@@ -1,15 +1,15 @@
 export default function Social() {
   return (
-    <div className="bg-gray-900 rounded-3xl md:mx-8 lg:mx-20 my-8 py-16 px-12 mt-48 shadow-2xl">
-      <div className="flex md:flex-col lg:flex-row justify-between md:items-baseline lg:items-center w-full">
-        <div className="md:w-full lg:w-1/2 md:mb-8 lg:mb-0">
-          <h1 className="text-white font-bold md:text-7xl lg:text-6xl">
+    <div className="bg-gray-900 rounded-3xl mx-6 md:mx-20 my-8 py-8 md:py-16 px-6 md:px-12 mt-16 md:mt-48 shadow-2xl">
+      <div className="flex flex-col md:flex-row justify-between items-baseline md:items-center w-full gap-4 md:gap-12">
+        <div className="w-full md:w-2/5">
+          <h1 className="text-white font-bold text-4xl md:text-6xl text-center md:text-left">
             Join the
             <br /> community
           </h1>
         </div>
-        <div className="md:w-full lg:w-1/2">
-          <ul className="flex flex-row justify-between items-center">
+        <div className="w-full md:w-3/5">
+          <ul className="flex flex-row flex-wrap justify-center items-center gap-8">
             <li>
               <a
                 target="_blank"
@@ -17,7 +17,7 @@ export default function Social() {
                 href="https://twitter.com/hyderabaddao">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:w-14 lg:h-14 md:h-24 md:w-24 text-white"
+                  className="w-14 h-14 md:h-20 md:w-20 text-white"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 1024 1024">
                   <path
@@ -34,7 +34,7 @@ export default function Social() {
                 href="https://www.instagram.com/hyderabaddao/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:w-14 lg:h-14 md:h-24 md:w-24 text-white"
+                  className="w-14 h-14 md:h-20 md:w-20 text-white"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24">
                   <path
@@ -51,7 +51,7 @@ export default function Social() {
                 href="https://t.me/+xkA44IFgCwwzYTdl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:w-14 lg:h-14 md:h-24 md:w-24 text-white"
+                  className="w-14 h-14 md:h-20 md:w-20 text-white"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 32 32">
                   <path
@@ -68,7 +68,7 @@ export default function Social() {
                 href="mailto:hyderabaddao@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:w-14 lg:h-14 md:h-24 md:w-24 text-white"
+                  className="w-14 h-14 md:h-20 md:w-20 text-white"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24">
                   <path
@@ -85,7 +85,7 @@ export default function Social() {
                 href="https://www.linkedin.com/company/hyderabad-dao/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:w-14 lg:h-14 md:h-24 md:w-24 text-white"
+                  className="w-14 h-14 md:h-20 md:w-20 text-white"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24">
                   <path
@@ -102,7 +102,7 @@ export default function Social() {
                 href="https://discord.com/invite/jBc2UdBAmn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:w-14 lg:h-14 md:h-24 md:w-24 text-white"
+                  className="w-14 h-14 md:h-20 md:w-20 text-white"
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24">
                   <path
