@@ -1,7 +1,7 @@
 export default function Social() {
   return (
     <div className="bg-gray-900 rounded-3xl mx-6 md:mx-20 my-8 py-8 md:py-16 px-6 md:px-12 mt-16 md:mt-48 shadow-2xl">
-      <div className="flex flex-col md:flex-row justify-between items-baseline md:items-center w-full gap-4 md:gap-12">
+      <div className="flex flex-col md:flex-row justify-between items-baseline md:items-center w-full gap-6 md:gap-12">
         <div className="w-full md:w-2/5">
           <h1 className="text-white font-bold text-4xl md:text-6xl text-center md:text-left">
             Join the

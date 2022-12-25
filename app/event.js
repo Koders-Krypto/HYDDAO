@@ -25,7 +25,7 @@ export default async function Event() {
 
   return (
     <div className="flex flex-col justify-center items-center py-8 px-6">
-      <h1 className="text-4xl pb-4 text-center">
+      <h1 className="text-3xl pb-4 text-center">
         Upcoming Events in <strong>Hyderabad</strong>
       </h1>
 
@@ -47,10 +47,8 @@ export default async function Event() {
                   fill
                 />
               </div>
-              <div className="mx-4 my-6 md:my-3 md:mx-2">
-                <h1 className="font-semibold text-xl truncate pb-3 md:pb-1">
-                  {event.name}
-                </h1>
+              <div className="mx-4 my-4 md:my-3 md:mx-2">
+                <h1 className="font-bold text-xl truncate">{event.name}</h1>
                 <h1 className="font-normal text-base text-gray-600">
                   {moment(event.eventDate).format("MMMM Do YYYY")}
                 </h1>
