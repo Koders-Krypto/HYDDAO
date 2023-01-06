@@ -16,7 +16,7 @@ async function getData() {
         query: "",
       }),
     },
-    { next: { revalidate: 60 } }
+    { cache: "no-store" }
   );
 
   const content = await rawResponse.json();
