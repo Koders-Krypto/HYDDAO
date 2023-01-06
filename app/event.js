@@ -58,7 +58,7 @@ export default function Event() {
                   className="flex flex-row justify-end items-center">
                   <button
                     type=""
-                    className="bg-gray-900 py-3 px-6 text-white rounded-xl text-base uppercase">
+                    className="bg-gray-900 py-2 px-6 text-white rounded-xl text-base uppercase">
                     Register
                   </button>
                 </a>
