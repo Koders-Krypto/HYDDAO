@@ -1,32 +1,27 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import moment from "moment";
-async function getData() {
-  const rawResponse = await fetch(
-    "https://api.meetupswala.xyz/events/list",
-    {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
+import axios from "axios";
+
+export default function Event() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .post("https://api.meetupswala.xyz/events/list", {
         tag: null,
         city: 17, //Hyderabad city code 17
         offset: 0,
         query: "",
-      }),
-    },
-    { cache: "no-store" }
-  );
-
-  const content = await rawResponse.json();
-  // console.log(content);
-  return content;
-}
-
-export default async function Event() {
-  const data = await getData();
-
+      })
+      .then(function (response) {
+        setData(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
   return (
     <div className="flex flex-col justify-center items-center py-8 px-6">
       <h1 className="text-3xl pb-4 text-center">
@@ -34,7 +29,7 @@ export default async function Event() {
       </h1>
 
       <div className="flex flex-col w-full md:grid md:grid-cols-4 grid-row-auto gap-4 my-4 mx-0 md:mx-8 px-0 md:px-8">
-        {data.data?.map((event, index) => {
+        {data?.map((event, index) => {
           return (
             <div className="shadow-md rounded-lg bg-white" key={index}>
               <div className="w-full h-56 relative">
