@@ -1,22 +1,26 @@
 import Image from "next/image";
 import moment from "moment";
 async function getData() {
-  const rawResponse = await fetch("https://api.meetupswala.xyz/events/list", {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
+  const rawResponse = await fetch(
+    "https://api.meetupswala.xyz/events/list",
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        tag: null,
+        city: 17, //Hyderabad city code 17
+        offset: 0,
+        query: "",
+      }),
     },
-    body: JSON.stringify({
-      tag: null,
-      city: 17, //Hyderabad city code 17
-      offset: 0,
-      query: "",
-    }),
-  });
+    { next: { revalidate: 60 } }
+  );
 
   const content = await rawResponse.json();
-
+  // console.log(content);
   return content;
 }
 
