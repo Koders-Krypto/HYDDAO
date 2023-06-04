@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="w-full text-center py-4">
-      <h1 className="text-base">All Rights Reserved © 2022 - Hyderabad DAO</h1>
+    <div className="w-full py-4 text-center">
+      <h1 className="text-base">All Rights Reserved © 2023 - Hyderabad DAO</h1>
     </div>
   );
 }
