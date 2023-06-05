@@ -7,7 +7,7 @@ export default function Jobs() {
 
   useEffect(() => {
     axios
-      .get("https://app.social3.club/api-staging/job/get/?page=1&size=10", {})
+      .get("https://app.social3.club/api/job/get/?page=1&size=10", {})
       .then(function (response) {
         console.log(response.data.data);
         setJobs(response.data.data.jobs);
