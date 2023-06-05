@@ -80,7 +80,7 @@ export default function Jobs() {
                     </a>
                   </div>
                   <div className="absolute top-2 right-2">
-                    <h4 className="flex items-center justify-center gap-2 px-3 py-1 text-xs text-white bg-orange-600 rounded-full">
+                    <h4 className="flex items-center justify-center gap-2 px-3 py-1 text-xs text-white rounded-full bg-slate-600">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -95,7 +95,7 @@ export default function Jobs() {
                         <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
                       </svg>
 
-                      <span className="flex items-center justify-center w-5 h-5 text-orange-600 bg-white rounded-full">
+                      <span className="flex items-center justify-center w-5 h-5 bg-white rounded-full text-slate-600">
                         {job.total_applicants}
                       </span>
                     </h4>
@@ -137,7 +137,7 @@ export default function Jobs() {
                   </a>
                 </div>
                 <div className="absolute top-2 right-2">
-                  <h4 className="flex items-center justify-center gap-2 px-3 py-1 text-xs text-white bg-orange-600 rounded-full">
+                  <h4 className="flex items-center justify-center gap-2 px-3 py-1 text-xs text-white rounded-full bg-slate-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -152,7 +152,7 @@ export default function Jobs() {
                       <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
                     </svg>
 
-                    <span className="flex items-center justify-center w-5 h-5 text-orange-600 bg-white rounded-full">
+                    <span className="flex items-center justify-center w-5 h-5 bg-white rounded-full text-slate-600">
                       {job.total_applicants}
                     </span>
                   </h4>
