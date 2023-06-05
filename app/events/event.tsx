@@ -23,18 +23,18 @@ export default function Event() {
       });
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center py-8 px-6">
-      <h1 className="text-3xl pb-4 text-center">
+    <div className="flex flex-col items-center justify-center px-6 py-8">
+      <h1 className="pb-4 text-3xl text-center">
         Upcoming Events in <strong>Hyderabad</strong>
       </h1>
 
-      <div className="flex flex-col w-full md:grid md:grid-cols-4 grid-row-auto gap-4 my-4 mx-0 md:mx-8 px-0 md:px-8">
+      <div className="flex flex-col w-full gap-4 px-0 mx-0 my-4 md:grid md:grid-cols-3 grid-row-auto">
         {data?.map((event, index) => {
           return (
-            <div className="shadow-md rounded-lg bg-white" key={index}>
-              <div className="w-full h-56 relative">
+            <div className="bg-white rounded-lg shadow-md" key={index}>
+              <div className="relative w-full h-56">
                 <Image
-                  className="w-full rounded-t-lg h-56 object-fill"
+                  className="object-fill w-full h-56 rounded-t-lg"
                   src={
                     "https://api.meetupswala.xyz/events/image?image=" +
                     event.coverImage
@@ -47,18 +47,17 @@ export default function Event() {
                 />
               </div>
               <div className="mx-4 my-4 md:my-3 md:mx-2">
-                <h1 className="font-bold text-xl truncate">{event.name}</h1>
-                <h1 className="font-normal text-base text-gray-600">
+                <h1 className="text-xl font-bold truncate">{event.name}</h1>
+                <h1 className="text-base font-normal text-gray-600">
                   {moment(event.eventDate).format("MMMM Do YYYY")}
                 </h1>
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href={event.registrationLink}
-                  className="flex flex-row justify-end items-center">
-                  <button
-                    type=""
-                    className="bg-gray-900 py-2 px-6 text-white rounded-xl text-base uppercase">
+                  className="flex flex-row items-center justify-end"
+                >
+                  <button className="px-6 py-2 text-base text-white uppercase bg-gray-900 rounded-xl">
                     Register
                   </button>
                 </a>
@@ -67,8 +66,8 @@ export default function Event() {
           );
         })}
       </div>
-      {data.status === "Failure" && (
-        <h1 className="text-2xl pb-20 pt-12 text-center">
+      {data?.length === 0 && (
+        <h1 className="pt-12 pb-20 text-2xl text-center">
           Sorry 🥺 there is no upcoming events
         </h1>
       )}
@@ -78,7 +77,8 @@ export default function Event() {
           className="font-bold underline"
           href="https://www.meetupswala.xyz/"
           rel="noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           meetupswala.xyz
         </a>
       </p>

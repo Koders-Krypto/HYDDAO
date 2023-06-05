@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Event from "./event";
-import Footer from "./footer";
-import Social from "./social";
+import Event from "./events/event";
+import Footer from "./common/Footer";
+import Social from "./common/Social";
 import Jobs from "./jobs/jobs";
+
 export default function Home() {
   return (
     <>
@@ -17,13 +18,13 @@ export default function Home() {
             Largest Web3 community in Hyderabad
           </h1>
           <ul className="flex flex-wrap items-center justify-center space-x-8 text-base text-white uppercase md:text-2xl">
-            <l1>Builders</l1>
-            <l1>|</l1>
-            <l1>Founders</l1>
-            <l1>|</l1>
-            <l1>Artists</l1>
-            <l1>|</l1>
-            <l1>& More</l1>
+            <li>Builders</li>
+            <li>|</li>
+            <li>Founders</li>
+            <li>|</li>
+            <li>Artists</li>
+            <li>|</li>
+            <li>& More</li>
           </ul>
           <h2 className="flex flex-col text-xl text-center text-white md:text-2xl">
             Let{"'"}s make Hyderabad Web3 capital of India
