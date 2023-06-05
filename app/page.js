@@ -2,6 +2,7 @@ import Image from "next/image";
 import Event from "./event";
 import Footer from "./footer";
 import Social from "./social";
+import Jobs from "./jobs/jobs";
 export default function Home() {
   return (
     <>
@@ -12,10 +13,10 @@ export default function Home() {
               <Image src={"/logo.png"} alt="logo" fill />
             </div>
           </div>
-          <h1 className="text-4xl md:text-6xl text-center text-white font-bold uppercase w-full md:w-3/4 px-8">
+          <h1 className="w-full px-8 text-4xl font-bold text-center text-white uppercase md:text-6xl md:w-3/4">
             Largest Web3 community in Hyderabad
           </h1>
-          <ul className="flex flex-wrap justify-center items-center text-white space-x-8 text-base md:text-2xl uppercase">
+          <ul className="flex flex-wrap items-center justify-center space-x-8 text-base text-white uppercase md:text-2xl">
             <l1>Builders</l1>
             <l1>|</l1>
             <l1>Founders</l1>
@@ -24,7 +25,7 @@ export default function Home() {
             <l1>|</l1>
             <l1>& More</l1>
           </ul>
-          <h2 className="flex flex-col text-center text-white text-xl md:text-2xl">
+          <h2 className="flex flex-col text-xl text-center text-white md:text-2xl">
             Let{"'"}s make Hyderabad Web3 capital of India
             <span className="pt-6"> #WAGBI 🚀</span>
           </h2>
@@ -37,7 +38,8 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 text-white">
+                className="w-6 h-6 text-white"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -51,9 +53,13 @@ export default function Home() {
       <div id="events">
         <Event />
       </div>
+      <div id="Jobs">
+        <Jobs />
+      </div>
       <div id="Social">
         <Social />
       </div>
+
       <Footer />
     </>
   );

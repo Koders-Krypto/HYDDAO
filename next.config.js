@@ -11,7 +11,10 @@ const nextConfig = {
     ],
   },
   images: {
-    domains: ["api.meetupswala.xyz"],
+    domains: [
+      "api.meetupswala.xyz",
+      "social3-uploads.s3.ap-south-1.amazonaws.com",
+    ],
   },
   reactStrictMode: true,
   swcMinify: true,
