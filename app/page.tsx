@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <div className="flex items-start justify-center min-h-screen bg-no-repeat bg-cover background">
-        <div className="flex flex-col items-center px-4 py-20 space-y-8 justify-evenly md:justify-between layer">
+        <div className="flex flex-col items-center gap-8 px-4 py-20 justify-evenly md:justify-center layer">
           <div className="shadow-xl rounded-full bg-white p-[1px]">
             <div className="relative w-40 h-40">
               <Image src={"/logo.png"} alt="logo" fill />
