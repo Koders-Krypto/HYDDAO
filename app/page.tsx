@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <>
       <div className="flex items-start justify-center min-h-screen bg-no-repeat bg-cover background">
-        <div className="flex flex-col h-[100vh] justify-evenly md:justify-between items-center layer space-y-8 py-20 px-4">
+        <div className="flex flex-col items-center px-4 py-20 space-y-8 justify-evenly md:justify-between layer">
           <div className="shadow-xl rounded-full bg-white p-[1px]">
-            <div className="relative w-40 h-40 md:w-64 md:h-64">
+            <div className="relative w-40 h-40">
               <Image src={"/logo.png"} alt="logo" fill />
             </div>
           </div>
-          <h1 className="w-full px-8 text-4xl font-bold text-center text-white uppercase md:text-6xl md:w-3/4">
+          <h1 className="w-full px-8 text-4xl font-bold text-center text-white uppercase md:text-5xl xl:text-6xl md:w-3/4">
             Largest Web3 community in Hyderabad
           </h1>
           <ul className="flex flex-wrap items-center justify-center space-x-8 text-base text-white uppercase md:text-2xl">
