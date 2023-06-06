@@ -7,7 +7,7 @@ import { useIntersection } from "@mantine/hooks";
 
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
-  const [size, setSize] = useState(9);
+  const [size, setSize] = useState(8);
   const [end, setEnd] = useState(false);
 
   const lastJob = useRef<HTMLElement>(null);
@@ -19,7 +19,7 @@ export default function Jobs() {
   useEffect(() => {
     if (entry?.isIntersecting) {
       console.log(entry?.isIntersecting);
-      setSize(size + 18);
+      setSize(size + 16);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [entry]);
@@ -42,8 +42,8 @@ export default function Jobs() {
           Jobs <strong>for you 🫵</strong>
         </h1>
 
-        <div className="flex flex-col w-full gap-4 md:grid md:grid-cols-3">
-          {jobs?.slice(0, 90).map((job, index) => {
+        <div className="flex flex-col w-full gap-4 md:grid md:grid-cols-3 xl:grid-cols-4">
+          {jobs?.slice(0, 88).map((job, index) => {
             if (index + 1 === jobs.length)
               return (
                 <div

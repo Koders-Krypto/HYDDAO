@@ -32,9 +32,9 @@ export default function Event() {
         {data?.map((event, index) => {
           return (
             <div className="bg-white rounded-lg shadow-md" key={index}>
-              <div className="relative w-full h-56">
+              <div className="relative aspect-video">
                 <Image
-                  className="object-fill w-full h-56 rounded-t-lg"
+                  className="object-cover w-full h-56 rounded-t-lg"
                   src={
                     "https://api.meetupswala.xyz/events/image?image=" +
                     event.coverImage
