@@ -18,7 +18,6 @@ export default function Jobs() {
 
   useEffect(() => {
     if (entry?.isIntersecting) {
-      console.log(entry?.isIntersecting);
       setSize(size + 16);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
