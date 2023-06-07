@@ -23,8 +23,6 @@ export default function Home() {
             <li>Founders</li>
             <li>|</li>
             <li>Artists</li>
-            <li>|</li>
-            <li>& More</li>
           </ul>
           <h2 className="flex flex-col text-xl text-center text-white md:text-2xl">
             Let{"'"}s make Hyderabad Web3 capital of India

@@ -20,6 +20,7 @@ export default function Jobs() {
     axios
       .get(`https://app.social3.club/api/job/get/?page=1&size=${size}`, {})
       .then(function (response) {
+        // console.log(response.data.data);
         setCount(response.data.data.totalCount);
         setJobs(response.data.data.jobs);
       })
