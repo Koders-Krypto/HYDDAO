@@ -4,6 +4,7 @@ import Footer from "./common/Footer";
 import Social from "./common/Social";
 import Jobs from "./jobs/jobs";
 import Partners from "./partners/partners";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,8 +27,20 @@ export default function Home() {
             <li>Artists</li>
           </ul>
           <h2 className="flex flex-col text-xl text-center text-white md:text-2xl">
-            Let{"'"}s make Hyderabad Web3 capital of India
-            <span className="pt-6"> #WAGBI 🚀</span>
+            On a mission to make Hyderabad a Web3 Capital of India.
+            <br />{" "}
+            <span>
+              In Association with the{" "}
+              <Link
+                className="font-bold "
+                href={"https://invest.telangana.gov.in/emerging-technologies/"}
+                rel="noreferrer"
+                target="_blank"
+              >
+                Telangana Government
+              </Link>
+              .
+            </span>
           </h2>
 
           <a href="#partners">
