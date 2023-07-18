@@ -30,7 +30,7 @@ export default function Home() {
             <span className="pt-6"> #WAGBI 🚀</span>
           </h2>
 
-          <a href="#events">
+          <a href="#partners">
             <div className="border-[1px] md:border-[2px] px-4 py-6 animate-pulse cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
