@@ -25,7 +25,7 @@ export default function Event() {
   return (
     <div className="flex flex-col items-center justify-center px-6 py-8">
       <h1 className="pb-4 text-3xl text-center">
-        Upcoming Events in <strong>Hyderabad</strong>
+        Upcoming Events in <strong>Hyderabad</strong> 🎟️
       </h1>
 
       <div className="flex flex-col w-full gap-4 px-0 mx-0 my-4 md:grid md:grid-cols-3 grid-row-auto">

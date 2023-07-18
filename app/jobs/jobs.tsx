@@ -36,7 +36,7 @@ export default function Jobs() {
           Jobs <strong>for you 🫵</strong>
         </h1>
 
-        <div className="flex flex-col w-full gap-4 md:grid md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-4">
           {jobs?.slice(0, 88).map((job, index) => {
             return (
               <div

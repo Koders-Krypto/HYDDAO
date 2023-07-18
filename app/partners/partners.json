@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Dydx Foundation",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/dYdX-Foundation.png"
+    },
+    {
+        "name": "Emerging Technology",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Emerging-Technology.png"
+    },
+    {
+        "name": "Polygon",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Polygon.png"
+    },
+    {
+        "name": "CoinDCX",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/CoinDCX-Logo.png"
+    },
+    {
+        "name": "DevX",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/devx.png"
+    },
+    {
+        "name": "Filecoin",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Filecoin-logo.png"
+    },
+    {
+        "name": "Hyperlane",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Hyperlane.png"
+    },
+    {
+        "name": "LBank",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/LBank.png"
+    },
+    {
+        "name": "Metamorphosis",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Metamorphosis.svg"
+    },
+    {
+        "name": "NervOS",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/nervos.png"
+    },
+    {
+        "name": "Omniflix",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/omniflix.svg"
+    },
+    {
+        "name": "Polkadot",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/polkadot-logo.png"
+    }
+]

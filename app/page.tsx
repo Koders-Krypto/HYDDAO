@@ -3,6 +3,7 @@ import Event from "./events/event";
 import Footer from "./common/Footer";
 import Social from "./common/Social";
 import Jobs from "./jobs/jobs";
+import Partners from "./partners/partners";
 
 export default function Home() {
   return (
@@ -48,6 +49,9 @@ export default function Home() {
             </div>
           </a>
         </div>
+      </div>
+      <div id="partners">
+        <Partners />
       </div>
       <div id="events">
         <Event />
