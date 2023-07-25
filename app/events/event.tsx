@@ -34,7 +34,7 @@ export default function Event() {
             <div className="bg-white rounded-lg shadow-md" key={index}>
               <div className="relative aspect-video">
                 <Image
-                  className="object-cover w-full h-56 rounded-t-lg"
+                  className="w-full h-56 rounded-t-lg object-fit"
                   src={
                     "https://api.meetupswala.xyz/events/image?image=" +
                     event.coverImage
