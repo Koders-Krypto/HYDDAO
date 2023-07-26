@@ -40,7 +40,7 @@ export default function Jobs() {
           {jobs?.slice(0, 88).map((job, index) => {
             return (
               <div
-                className="relative bg-white rounded-lg shadow-md"
+                className="relative max-w-[85%] md:max-w-full mx-auto w-full bg-white rounded-lg shadow-md"
                 key={index}
               >
                 <div className="relative flex items-center justify-center p-10 bg-black rounded-t-lg">
