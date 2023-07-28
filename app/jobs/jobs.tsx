@@ -31,19 +31,19 @@ export default function Jobs() {
   }, [size]);
   return (
     <>
-      <div className="flex flex-col items-center justify-center px-6 py-8">
+      <div className="flex w-full flex-col items-center justify-center px-6 py-8">
         <h1 className="pb-4 text-3xl text-center">
           Jobs <strong>for you 🫵</strong>
         </h1>
 
-        <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-4 w-full justify-center md:grid-cols-3 xl:grid-cols-4">
           {jobs?.slice(0, 88).map((job, index) => {
             return (
               <div
                 className="relative max-w-[85%] md:max-w-full mx-auto w-full bg-white rounded-lg shadow-md"
                 key={index}
               >
-                <div className="relative flex items-center justify-center p-10 bg-black rounded-t-lg">
+                <div className="relative w-full flex items-center justify-center p-10 bg-black rounded-t-lg">
                   <Image
                     className="w-24 h-24 rounded-lg aspect-square"
                     src={job?.company?.avatar_url}
