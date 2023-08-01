@@ -1,21 +1,8 @@
 "use client";
 
-// import Swiper core and required modules
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/splide/dist/css/splide.min.css";
 
 import PartnerData from "./partners.json";
 import Image from "next/image";
@@ -27,48 +14,41 @@ export default function Partners() {
         Our <strong>Partners</strong> 🫶
       </h3>
       <div className="w-full">
-        <Swiper
-          spaceBetween={30}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
+        <Splide
+          options={{
+            type: "loop",
+            gap: "2rem",
+            drag: "free",
+            arrows: false,
+            pagination: false,
+            perPage: 3,
+            autoScroll: {
+              pauseOnHover: false,
+              pauseOnFocus: false,
+              rewind: false,
+              speed: 1,
             },
           }}
-          style={{ paddingBottom: "3rem" }}
-          slidesPerView={1}
-          modules={[Autoplay]}
+          extensions={{ AutoScroll }}
+          className="flex items-center justify-center h-24 min-w-full"
         >
           {PartnerData.map((item, i) => {
             return (
-              <SwiperSlide key={i}>
-                <div className="flex flex-col items-center justify-center aspect-video">
+              <SplideSlide className="overflow-hidden" key={i}>
+                <div className="flex items-center justify-center w-full h-56 md:w-56">
                   <Image
+                    className="object-fill "
                     src={item.image}
+                    loading="lazy"
                     alt={item.name}
-                    height="100"
-                    width="150"
+                    width={180}
+                    height={180}
                   />
                 </div>
-              </SwiperSlide>
+              </SplideSlide>
             );
           })}
-        </Swiper>
+        </Splide>
       </div>
     </section>
   );
