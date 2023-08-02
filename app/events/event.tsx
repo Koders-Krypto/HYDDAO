@@ -68,7 +68,7 @@ export default function Event() {
       </div>
       {data?.length === 0 && (
         <h1 className="pt-12 pb-20 text-2xl text-center">
-          Sorry 🥺 there is no upcoming events
+          Sorry 🥺 there are no upcoming events
         </h1>
       )}
       <p className="text-base text-center">

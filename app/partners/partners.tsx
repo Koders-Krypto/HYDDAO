@@ -37,7 +37,7 @@ export default function Partners() {
               <SplideSlide className="overflow-hidden" key={i}>
                 <div className="flex items-center justify-center w-full h-56 md:w-56">
                   <Image
-                    className="object-fill "
+                    className="object-fill"
                     src={item.image}
                     loading="lazy"
                     alt={item.name}

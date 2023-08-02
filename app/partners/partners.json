@@ -58,5 +58,45 @@
         "name": "Polkadot",
         "link": "https://dydx.exchange/",
         "image": "/partners/polkadot-logo.png"
+    },
+    {
+        "name": "Starknet",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Starknet.png"
+    },
+    {
+        "name": "Shardeum",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Shardeum.png"
+    },
+    {
+        "name": "Davos",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Stackos.png"
+    },
+    {
+        "name": "Davos",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Web3Conf.png"
+    },
+    {
+        "name": "Davos",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/tpg.png"
+    },
+    {
+        "name": "Davos",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/shipfinex.png"
+    },
+    {
+        "name": "Davos",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Social3.png"
+    },
+    {
+        "name": "Davos",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Web3Dubai.png"
     }
 ]
