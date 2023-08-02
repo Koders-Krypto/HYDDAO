@@ -26,7 +26,7 @@ export default function Partners() {
               pauseOnHover: false,
               pauseOnFocus: false,
               rewind: false,
-              speed: 1,
+              speed: 1.5,
             },
           }}
           extensions={{ AutoScroll }}
