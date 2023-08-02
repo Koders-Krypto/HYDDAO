@@ -22,12 +22,12 @@
     {
         "name": "DevX",
         "link": "https://dydx.exchange/",
-        "image": "/partners/devx.png"
+        "image": "/partners/DevX.png"
     },
     {
         "name": "Filecoin",
         "link": "https://dydx.exchange/",
-        "image": "/partners/Filecoin-logo.png"
+        "image": "/partners/Filecoin.png"
     },
     {
         "name": "Hyperlane",
@@ -45,19 +45,14 @@
         "image": "/partners/Metamorphosis.png"
     },
     {
-        "name": "NervOS",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/nervos.png"
-    },
-    {
         "name": "Omniflix",
         "link": "https://dydx.exchange/",
-        "image": "/partners/omniflix.png"
+        "image": "/partners/Omniflix.png"
     },
     {
         "name": "Polkadot",
         "link": "https://dydx.exchange/",
-        "image": "/partners/polkadot-logo.png"
+        "image": "/partners/Polkadot.png"
     },
     {
         "name": "Starknet",
@@ -70,32 +65,32 @@
         "image": "/partners/Shardeum1.png"
     },
     {
-        "name": "Davos",
+        "name": "StackOS",
         "link": "https://dydx.exchange/",
         "image": "/partners/Stackos.png"
     },
     {
-        "name": "Davos",
+        "name": "Web3Conf",
         "link": "https://dydx.exchange/",
         "image": "/partners/Web3Conf.png"
     },
     {
-        "name": "Davos",
+        "name": "TPG",
         "link": "https://dydx.exchange/",
         "image": "/partners/tpg.png"
     },
     {
-        "name": "Davos",
+        "name": "Shipfinex",
         "link": "https://dydx.exchange/",
-        "image": "/partners/shipfinex.png"
+        "image": "/partners/Shipfinex.png"
     },
     {
-        "name": "Davos",
+        "name": "Social3",
         "link": "https://dydx.exchange/",
         "image": "/partners/Social3.png"
     },
     {
-        "name": "Davos",
+        "name": "Web3Dubai",
         "link": "https://dydx.exchange/",
         "image": "/partners/Web3Dubai.png"
     }
