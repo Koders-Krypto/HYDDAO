@@ -17,7 +17,7 @@
     {
         "name": "CoinDCX",
         "link": "https://dydx.exchange/",
-        "image": "/partners/CoinDCX-Logo.png"
+        "image": "/partners/CoinDCX.png"
     },
     {
         "name": "DevX",
@@ -57,12 +57,12 @@
     {
         "name": "Starknet",
         "link": "https://dydx.exchange/",
-        "image": "/partners/Starknet1.png"
+        "image": "/partners/Starknet.png"
     },
     {
         "name": "Shardeum",
         "link": "https://dydx.exchange/",
-        "image": "/partners/Shardeum1.png"
+        "image": "/partners/Shardeum.png"
     },
     {
         "name": "StackOS",
