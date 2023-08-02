@@ -30,7 +30,7 @@ export default function Partners() {
             },
           }}
           extensions={{ AutoScroll }}
-          className="flex items-center justify-center h-24 min-w-full"
+          className="flex items-center justify-center h-24 min-w-full px-6"
         >
           {PartnerData.map((item, i) => {
             return (
