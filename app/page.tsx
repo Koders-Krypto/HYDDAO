@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Event from "./events/event";
-import Footer from "./common/Footer";
-import Social from "./common/Social";
+import Footer from "./components/Footer";
+import Social from "./components/Social";
 import Jobs from "./jobs/jobs";
 import Partners from "./partners/partners";
 import Link from "next/link";
-import { Tweet } from "react-tweet";
+import Slider from "./components/slides/slider";
 
 export default function Home() {
   return (
     <>
-      <div className="relative min-h-[90vh] px-6 md:px-12 py-12 bg-no-repeat bg-none md:bg-cover background">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="h-full">
+      <div className="relative px-6 py-12 bg-no-repeat md:px-12 bg-none md:bg-cover background">
+        <div className="flex flex-col md:flex-row items-center justify-center min-h-[70vh] gap-8">
+          <div className="w-full md:w-1/2">
             <div className="flex flex-col items-center justify-center h-full text-center md:items-start md:text-left gap-7">
               <div className="shadow-xl rounded-full bg-white p-[1px]">
                 <div className="relative w-40 h-40">
@@ -49,13 +49,13 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="flex items-center justify-center">
-            <Tweet id="1622590212173103104" />
+          <div className="flex items-center justify-center w-full md:w-1/2">
+            <Slider />
           </div>
         </div>
         <div className="flex items-center justify-center">
           <a href="#partners">
-            <div className="border-[1px] md:border-[2px] px-4 py-6 animate-pulse cursor-pointer">
+            <div className="border-[1px] md:border-[2px] px-4 py-6 animate-pulse cursor-pointer mt-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -78,16 +78,15 @@ export default function Home() {
       <div id="partners">
         <Partners />
       </div>
-      {/* <div id="events">
+      <div id="events">
         <Event />
-      </div> */}
+      </div>
       <div id="Jobs">
         <Jobs />
       </div>
       <div id="Social">
         <Social />
       </div>
-
       <Footer />
     </>
   );

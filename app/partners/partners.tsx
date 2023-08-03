@@ -28,6 +28,7 @@ export default function Partners() {
               rewind: false,
               speed: 1.5,
             },
+            focus: "center",
           }}
           extensions={{ AutoScroll }}
           className="flex items-center justify-center h-24 min-w-full px-6 md:px-12"

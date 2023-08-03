@@ -9,15 +9,19 @@ html {
 }
 
 .background {
-  background-image: url("/background1.png");
-  position: relative;
-  background-position: center;
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.background-skyline {
-  background-image: url("/hyderabad-skyline.jpg");
-  position: relative;
-  background-position: center;
-}
+
 .layer {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -26,6 +30,16 @@ html {
   width: 100%;
   height: 100%;
 }
-.splide__slide {
-  width: 13rem !important;
+
+.bg-web3conf {
+  background: #f6d365;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.bg-web3conf-button {
+  background: rgb(253, 159, 72);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 159, 72, 1) 0%,
+    rgba(241, 111, 70, 1) 100%
+  );
 }
