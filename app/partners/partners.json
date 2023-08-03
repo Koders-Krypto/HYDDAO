@@ -98,5 +98,10 @@
         "name": "Davos",
         "link": "https://dydx.exchange/",
         "image": "/partners/Davos.png"
+    },
+    {
+        "name": "Blockchained-India",
+        "link": "https://dydx.exchange/",
+        "image": "/partners/Blockchained-India.png"
     }
 ]
