@@ -9,12 +9,20 @@ export default function Event() {
 
   useEffect(() => {
     axios
-      .post("https://api.meetupswala.xyz/events/list", {
-        tag: null,
-        city: 17, //Hyderabad city code 17
-        offset: 0,
-        query: "",
-      })
+      .post(
+        "/api/events",
+        {
+          tag: null,
+          city: 17, //Hyderabad city code 17
+          offset: 0,
+          query: "",
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
       .then(function (response) {
         setData(response.data.data);
       })
@@ -29,7 +37,7 @@ export default function Event() {
       </h1>
 
       <div className="flex flex-col w-full gap-4 px-0 mx-0 my-4 md:grid md:grid-cols-3 grid-row-auto">
-        {data?.map((event, index) => {
+        {data?.map((event: any, index) => {
           return (
             <div className="bg-white rounded-lg shadow-md" key={index}>
               <div className="relative aspect-video">

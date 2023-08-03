@@ -1,6 +1,6 @@
 export default function Social() {
   return (
-    <div className="px-6 py-8 mx-6 my-8 mt-16 bg-gray-900 shadow-2xl rounded-3xl md:py-16 md:px-12 md:mt-24">
+    <div className="px-12 py-8 mx-6 my-8 mt-16 bg-gray-900 shadow-2xl rounded-3xl md:py-16 md:px-12 md:mt-24">
       <div className="flex flex-col items-baseline justify-between w-full gap-6 md:flex-row md:items-center md:gap-12">
         <div className="w-full md:w-2/5">
           <h1 className="text-4xl font-bold text-center text-white xl:text-6xl md:text-left">

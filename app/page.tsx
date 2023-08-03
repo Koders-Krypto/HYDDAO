@@ -5,44 +5,55 @@ import Social from "./common/Social";
 import Jobs from "./jobs/jobs";
 import Partners from "./partners/partners";
 import Link from "next/link";
+import { Tweet } from "react-tweet";
 
 export default function Home() {
   return (
     <>
-      <div className="flex items-start justify-center min-h-screen bg-no-repeat bg-cover background">
-        <div className="flex flex-col items-center gap-7 md:gap-8 px-4 py-20 justify-evenly md:justify-center layer">
-          <div className="shadow-xl rounded-full bg-white p-[1px]">
-            <div className="relative w-40 h-40">
-              <Image src={"/logo.png"} alt="logo" fill />
+      <div className="relative min-h-[90vh] px-6 md:px-12 py-12 bg-no-repeat bg-none md:bg-cover background">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="h-full">
+            <div className="flex flex-col items-center justify-center h-full text-center md:items-start md:text-left gap-7">
+              <div className="shadow-xl rounded-full bg-white p-[1px]">
+                <div className="relative w-40 h-40">
+                  <Image src={"/logo.png"} alt="logo" fill />
+                </div>
+              </div>
+              <h1 className="w-full text-3xl font-bold text-white uppercase md:text-5xl xl:text-6xl">
+                Largest Web3 community in Hyderabad
+              </h1>
+              <ul className="flex flex-wrap items-center justify-center space-x-6 text-base text-white uppercase md:space-x-8 md:text-2xl">
+                <li>Builders</li>
+                <li>|</li>
+                <li>Founders</li>
+                <li>|</li>
+                <li>Artists</li>
+              </ul>
+              <h2 className="flex flex-col text-xl text-white md:text-2xl">
+                On a mission to make Hyderabad a Web3 Capital of India.
+                <br />{" "}
+                <span>
+                  In Association with the{" "}
+                  <Link
+                    className="font-bold "
+                    href={
+                      "https://invest.telangana.gov.in/emerging-technologies/"
+                    }
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Telangana Government
+                  </Link>
+                  .
+                </span>
+              </h2>
             </div>
           </div>
-          <h1 className="w-full px-14 md:px-8 text-3xl font-bold text-center text-white uppercase md:text-5xl xl:text-6xl md:w-3/4">
-            Largest Web3 community in Hyderabad
-          </h1>
-          <ul className="flex flex-wrap items-center justify-center space-x-6 md:space-x-8 text-base text-white uppercase md:text-2xl">
-            <li>Builders</li>
-            <li>|</li>
-            <li>Founders</li>
-            <li>|</li>
-            <li>Artists</li>
-          </ul>
-          <h2 className="flex flex-col text-xl text-center text-white md:text-2xl">
-            On a mission to make Hyderabad a Web3 Capital of India.
-            <br />{" "}
-            <span>
-              In Association with the{" "}
-              <Link
-                className="font-bold "
-                href={"https://invest.telangana.gov.in/emerging-technologies/"}
-                rel="noreferrer"
-                target="_blank"
-              >
-                Telangana Government
-              </Link>
-              .
-            </span>
-          </h2>
-
+          <div className="flex items-center justify-center">
+            <Tweet id="1622590212173103104" />
+          </div>
+        </div>
+        <div className="flex items-center justify-center">
           <a href="#partners">
             <div className="border-[1px] md:border-[2px] px-4 py-6 animate-pulse cursor-pointer">
               <svg
@@ -63,12 +74,13 @@ export default function Home() {
           </a>
         </div>
       </div>
+
       <div id="partners">
         <Partners />
       </div>
-      <div id="events">
+      {/* <div id="events">
         <Event />
-      </div>
+      </div> */}
       <div id="Jobs">
         <Jobs />
       </div>
