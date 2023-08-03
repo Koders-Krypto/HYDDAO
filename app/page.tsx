@@ -19,17 +19,17 @@ export default function Home() {
                   <Image src={"/logo.png"} alt="logo" fill />
                 </div>
               </div>
-              <h1 className="w-full text-3xl font-bold text-white uppercase md:text-5xl xl:text-6xl">
-                Largest Web3 community in Hyderabad
+              <h1 className="w-full text-4xl font-bold text-white uppercase xl:text-5xl">
+                Unleashing the Web3 Revolution in Hyderabad
               </h1>
-              <ul className="flex flex-wrap items-center justify-center space-x-6 text-base text-white uppercase md:space-x-8 md:text-2xl">
+              <ul className="flex flex-wrap items-center justify-center space-x-6 text-base text-white uppercase md:space-x-8 md:text-xl">
                 <li>Builders</li>
                 <li>|</li>
                 <li>Founders</li>
                 <li>|</li>
                 <li>Artists</li>
               </ul>
-              <h2 className="flex flex-col text-xl text-white md:text-2xl">
+              <h2 className="flex flex-col text-lg text-white md:text-xl">
                 On a mission to make Hyderabad a Web3 Capital of India.
                 <br />{" "}
                 <span>

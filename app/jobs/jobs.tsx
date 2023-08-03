@@ -31,7 +31,7 @@ export default function Jobs() {
   }, [size]);
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full px-12 py-8">
+      <div className="flex flex-col items-center justify-center w-full px-6 py-8 md:px-12">
         <h1 className="pb-4 text-3xl text-center">
           Jobs <strong>for you 🫵</strong>
         </h1>

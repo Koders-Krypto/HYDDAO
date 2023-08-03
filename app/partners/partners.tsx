@@ -36,7 +36,7 @@ export default function Partners() {
           {PartnerData.map((item, i) => {
             return (
               <SplideSlide className="overflow-hidden" key={i}>
-                <div className="flex items-center justify-center w-full h-56 md:w-56">
+                <div className="flex items-center justify-center w-full h-36 md:w-56">
                   <Image
                     className="object-fill"
                     src={item.image}

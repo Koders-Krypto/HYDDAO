@@ -85,7 +85,7 @@ export default function Event() {
         // </h1>
         <Banner />
       )}
-      <p className="text-base text-center">
+      {/* <p className="text-base text-center">
         Powered by{" "}
         <a
           className="font-bold underline"
@@ -95,7 +95,7 @@ export default function Event() {
         >
           meetupswala.xyz
         </a>
-      </p>
+      </p> */}
     </div>
   );
 }

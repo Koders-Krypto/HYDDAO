@@ -1,14 +1,14 @@
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const poppins = Poppins({
+const roboto = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={roboto.className}>
       <head>
         <title>Hyderabad DAO</title>
         <link rel="icon" type="image/x-icon" href="/logo.png" />

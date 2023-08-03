@@ -1,5 +1,11 @@
 [
     {
+        "image": "/slider/10.jpeg"
+    },
+    {
+        "image": "/slider/14.jpeg"
+    },
+    {
         "image": "/slider/12.jpeg"
     },
     {
@@ -24,9 +30,9 @@
         "image": "/slider/9.jpeg"
     },
     {
-        "image": "/slider/10.jpeg"
+        "image": "/slider/11.jpeg"
     },
     {
-        "image": "/slider/11.jpeg"
+        "image": "/slider/13.jpeg"
     }
 ]

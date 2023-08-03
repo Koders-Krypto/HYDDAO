@@ -25,7 +25,7 @@ export default function Banner() {
         </div>
         <div className="flex items-center justify-center xl:justify-end">
           <Link
-            href={"https://www.meetupswala.xyz/events/999"}
+            href={"https://web3confindia.xyz/"}
             target="_blank"
             rel="noreferrer"
           >
