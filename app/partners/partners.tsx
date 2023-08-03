@@ -13,39 +13,46 @@ export default function Partners() {
       <h3 className="pb-4 text-3xl text-center">
         Our <strong>Partners</strong> 🫶
       </h3>
-      <div className="w-full">
+      <div className="w-full px-6 md:px-12">
         <Splide
           options={{
             type: "loop",
-            gap: "2rem",
-            drag: "free",
-            arrows: false,
+            rewind: false,
+            perPage: 5,
+            perMove: 5,
+            gap: 20,
+            padding: "3rem",
             pagination: false,
-            perPage: 3,
-            autoScroll: {
-              pauseOnHover: false,
-              pauseOnFocus: false,
-              rewind: false,
-              speed: 1.5,
+            arrows: false,
+
+            breakpoints: {
+              623: {
+                perPage: 2,
+                perMove: 2,
+              },
+              935: {
+                perPage: 3,
+                perMove: 3,
+              },
+              1247: {
+                perPage: 4,
+                perMove: 4,
+              },
             },
-            focus: "center",
           }}
           extensions={{ AutoScroll }}
-          className="flex items-center justify-center h-24 min-w-full px-6 md:px-12"
+          className="flex items-center justify-center h-24"
         >
           {PartnerData.map((item, i) => {
             return (
-              <SplideSlide className="overflow-hidden" key={i}>
-                <div className="flex items-center justify-center w-full h-36 md:w-56">
-                  <Image
-                    className="object-fill"
-                    src={item.image}
-                    loading="lazy"
-                    alt={item.name}
-                    width={180}
-                    height={180}
-                  />
-                </div>
+              <SplideSlide className="flex items-center justify-center" key={i}>
+                <img
+                  src={item.image}
+                  loading="lazy"
+                  alt={item.name}
+                  width={180}
+                  height={180}
+                />
               </SplideSlide>
             );
           })}

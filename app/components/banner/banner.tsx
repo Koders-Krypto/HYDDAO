@@ -20,7 +20,7 @@ export default function Banner() {
             <h5 className="text-lg">Goa, India</h5>
           </div>
           <h6 className="text-lg font-semibold">
-            India{"'"}s largest chain agnostic web3 conference
+            India{"'"}s Largest Chain Agnostic Web3 Conference
           </h6>
         </div>
         <div className="flex items-center justify-center xl:justify-end">
