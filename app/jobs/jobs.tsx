@@ -120,7 +120,7 @@ export default function Jobs() {
             Sorry 🥺 there are no jobs to show
           </h1>
         )}
-        {console.log(jobs.length, count)}
+
         {jobs.length !== count && (
           <button
             className="px-4 py-1 my-4 text-white rounded-full bg-slate-600"

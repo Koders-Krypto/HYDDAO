@@ -25,7 +25,6 @@ export default function Event() {
         }
       )
       .then(function (response) {
-        console.log(response.data.data);
         setData(response.data.data);
       })
       .catch(function (error) {
