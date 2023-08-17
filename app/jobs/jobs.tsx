@@ -18,9 +18,12 @@ export default function Jobs() {
 
   useEffect(() => {
     axios
-      .get(`https://app.social3.club/api/job/get/?page=1&size=${size}`, {})
+      .get(`https://api.social3.club/job/get?page=1&size=${size}`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
       .then(function (response) {
-        // console.log(response.data.data);
         setCount(response.data.data.totalCount);
         setJobs(response.data.data.jobs);
       })
@@ -37,29 +40,40 @@ export default function Jobs() {
         </h1>
 
         <div className="grid justify-center w-full gap-4 md:grid-cols-3 xl:grid-cols-4">
-          {jobs?.slice(0, 88).map((job: any, index) => {
+          {jobs?.map((job: any, index) => {
             return (
               <div
                 className="relative max-w-[85%] md:max-w-full mx-auto w-full bg-white rounded-lg shadow-md"
                 key={index}
               >
                 <div className="relative flex items-center justify-center w-full p-10 bg-black rounded-t-lg">
-                  <Image
-                    className="w-24 h-24 rounded-lg aspect-square"
-                    src={job?.company?.avatar_url}
-                    alt={job.title}
-                    width={"200"}
-                    height={"200"}
-                  />
+                  <div className="flex items-center justify-center w-24 h-24">
+                    <Image
+                      className="object-fill rounded-lg"
+                      src={
+                        job?.company?.avatar_url
+                          ? job?.company?.avatar_url
+                          : "/Social3.png"
+                      }
+                      alt={job.title}
+                      width={"200"}
+                      height={"200"}
+                    />
+                  </div>
                 </div>
+
                 <div className="mx-4 my-4 md:my-3 md:mx-2">
-                  <h2 className="text-xl font-bold truncate">{job.title}</h2>
-                  <h3 className="text-sm font-normal text-gray-600">
-                    {moment(job.createdAt).format("MMMM Do YYYY")}
-                  </h3>
-                  <h3 className="text-sm font-normal text-gray-600">
-                    {job.location}
-                  </h3>
+                  <div className="flex flex-col items-start justify-start gap-1">
+                    <h2 className="w-full text-lg font-bold truncate">
+                      {job.title}
+                    </h2>
+                    <h3 className="text-sm font-normal text-gray-600">
+                      {moment(job.createdAt).format("MMMM Do YYYY")}
+                    </h3>
+                    <h3 className="text-sm font-normal text-gray-600">
+                      {job.location}
+                    </h3>
+                  </div>
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -106,7 +120,8 @@ export default function Jobs() {
             Sorry 🥺 there are no jobs to show
           </h1>
         )}
-        {jobs.length !== 140 && (
+        {console.log(jobs.length, count)}
+        {jobs.length !== count && (
           <button
             className="px-4 py-1 my-4 text-white rounded-full bg-slate-600"
             onClick={() => loadData()}

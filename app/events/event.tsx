@@ -8,37 +8,37 @@ import Banner from "../components/banner/banner";
 export default function Event() {
   const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .post(
-  //       "/api/events",
-  //       {
-  //         tag: null,
-  //         city: 17, //Hyderabad city code 17
-  //         offset: 0,
-  //         query: "",
-  //       },
-  //       {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       }
-  //     )
-  //     .then(function (response) {
-  //       console.log(response.data.data);
-  //       setData(response.data.data);
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .post(
+        "/api/events",
+        {
+          tag: null,
+          city: 17, //Hyderabad city code 17
+          offset: 0,
+          query: "",
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
+      .then(function (response) {
+        console.log(response.data.data);
+        setData(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center gap-4 mt-6">
       <h1 className="text-3xl text-center">
-        Meet us at <strong>Web3Conf</strong> 🤝
+        Upcoming <strong>Events</strong> 🤝
       </h1>
 
-      {/* {data?.length > 0 && (
+      {data?.length > 0 && (
         <div className="flex flex-col w-full gap-4 px-6 md:grid md:grid-cols-3 grid-row-auto md:px-12">
           {data?.map((event: any, index) => {
             return (
@@ -77,15 +77,14 @@ export default function Event() {
             );
           })}
         </div>
-      )} */}
-      <Banner />
-      {/* {data === undefined && (
+      )}
+      {/* <Banner /> */}
+      {data === undefined && (
         <h1 className="pt-12 pb-20 text-2xl text-center">
           Sorry 🥺 there are no upcoming events
         </h1>
-        
-      )} */}
-      {/* <p className="text-base text-center">
+      )}
+      <p className="text-base text-center">
         Powered by{" "}
         <a
           className="font-bold underline"
@@ -95,7 +94,7 @@ export default function Event() {
         >
           meetupswala.xyz
         </a>
-      </p> */}
+      </p>
     </div>
   );
 }
