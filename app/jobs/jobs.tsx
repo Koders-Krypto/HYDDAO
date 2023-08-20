@@ -39,11 +39,11 @@ export default function Jobs() {
           Jobs <strong>for you 🫵</strong>
         </h1>
 
-        <div className="grid justify-center w-full gap-4 md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-4">
           {jobs?.map((job: any, index) => {
             return (
               <div
-                className="relative max-w-[85%] md:max-w-full mx-auto w-full bg-white rounded-lg shadow-md"
+                className="relative w-full mx-auto bg-white rounded-lg shadow-md"
                 key={index}
               >
                 <div className="relative flex items-center justify-center w-full p-10 bg-black rounded-t-lg">

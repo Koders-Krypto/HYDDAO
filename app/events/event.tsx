@@ -79,7 +79,7 @@ export default function Event() {
       )}
       {/* <Banner /> */}
       {data === undefined && (
-        <h1 className="pt-12 pb-20 text-2xl text-center">
+        <h1 className="py-12 text-2xl text-center">
           Sorry 🥺 there are no upcoming events
         </h1>
       )}
