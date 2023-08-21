@@ -7,6 +7,7 @@ import Banner from "../components/banner/banner";
 
 export default function Event() {
   const [data, setData] = useState([]);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     axios
@@ -29,7 +30,8 @@ export default function Event() {
       })
       .catch(function (error) {
         console.log(error);
-      });
+      })
+      .finally(() => setLoader(false));
   }, []);
   return (
     <div className="flex flex-col items-center justify-center gap-4 mt-6">
@@ -78,11 +80,10 @@ export default function Event() {
         </div>
       )}
       {/* <Banner /> */}
-      {data === undefined && (
-        <h1 className="py-12 text-2xl text-center">
-          Sorry 🥺 there are no upcoming events
-        </h1>
-      )}
+      <div className="py-12 text-2xl text-center">
+        {loader && <h1>Loading ✨</h1>}
+        {data === undefined && <h1>Sorry 🥺 there are no upcoming events</h1>}
+      </div>
       <p className="text-base text-center">
         Powered by{" "}
         <a
