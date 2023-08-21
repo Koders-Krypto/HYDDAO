@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useLayoutEffect } from "react";
 import Image from "next/image";
 import moment from "moment";
 import "react-tooltip/dist/react-tooltip.css";
@@ -9,6 +9,7 @@ import { Tooltip } from "react-tooltip";
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
   const [size, setSize] = useState(16);
+  const [loader, setLoader] = useState(true);
 
   const [count, setCount] = useState(0);
 
@@ -16,7 +17,7 @@ export default function Jobs() {
     setSize(size + 16);
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     axios
       .get(`https://api.social3.club/job/get?page=1&size=${size}`, {
         headers: {
@@ -30,7 +31,8 @@ export default function Jobs() {
       .catch(function (error) {
         console.log(error);
         setJobs([]);
-      });
+      })
+      .finally(() => setLoader(false));
   }, [size]);
   return (
     <>
@@ -115,11 +117,13 @@ export default function Jobs() {
             );
           })}
         </div>
-        {jobs.length <= 0 && (
-          <h1 className="pt-12 pb-20 text-2xl text-center">
-            Sorry 🥺 there are no jobs to show
-          </h1>
-        )}
+
+        <div className="pt-12 pb-20 text-2xl text-center">
+          {loader && <h1>Loading 🪄</h1>}
+          {jobs.length <= 0 && !loader && (
+            <h1>Sorry 🥺 there are no jobs to show</h1>
+          )}
+        </div>
 
         {jobs.length !== count && (
           <button
