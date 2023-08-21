@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import { useEffect, useState, useRef, useLayoutEffect } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 import Image from "next/image";
 import moment from "moment";
 import "react-tooltip/dist/react-tooltip.css";
@@ -117,14 +117,6 @@ export default function Jobs() {
             );
           })}
         </div>
-
-        <div className="pt-12 pb-20 text-2xl text-center">
-          {loader && <h1>Loading 🪄</h1>}
-          {jobs.length <= 0 && !loader && (
-            <h1>Sorry 🥺 there are no jobs to show</h1>
-          )}
-        </div>
-
         {jobs.length !== count && (
           <button
             className="px-4 py-1 my-4 text-white rounded-full bg-slate-600"
@@ -133,7 +125,6 @@ export default function Jobs() {
             Load More
           </button>
         )}
-
         <p className="mt-4 text-base text-center">
           Powered by{" "}
           <a
@@ -145,6 +136,18 @@ export default function Jobs() {
             social3.club
           </a>
         </p>
+        {loader ? (
+          <>
+            <div className="pt-12 pb-20 text-2xl text-center">Loading...</div>
+          </>
+        ) : (
+          jobs.length <= 0 &&
+          !loader && (
+            <div className="pt-12 pb-20 text-2xl text-center">
+              <h1>Sorry 🥺 there are no jobs to show</h1>
+            </div>
+          )
+        )}
       </div>
     </>
   );
