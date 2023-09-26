@@ -36,7 +36,7 @@ export default function Event() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 mt-6">
       <h1 className="text-3xl text-center">
-        Meet us <strong>Unfold{"'"}23</strong> 🤝
+        Meet us at <strong>Unfold{"'"}23</strong> 🤝
       </h1>
       <Banner />
       {/* {data?.length > 0 && (
