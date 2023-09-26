@@ -31,15 +31,7 @@ html {
   height: 100%;
 }
 
-.bg-web3conf {
+.bg-unfold {
   background: #f6d365;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-}
-.bg-web3conf-button {
-  background: rgb(253, 159, 72);
-  background: linear-gradient(
-    90deg,
-    rgba(253, 159, 72, 1) 0%,
-    rgba(241, 111, 70, 1) 100%
-  );
+  background-image: url("/banner/cross-bg.png");
 }

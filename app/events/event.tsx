@@ -36,10 +36,10 @@ export default function Event() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 mt-6">
       <h1 className="text-3xl text-center">
-        Upcoming <strong>Events</strong> 🤝
+        Meet us <strong>Unfold{"'"}23</strong> 🤝
       </h1>
-
-      {data?.length > 0 && (
+      <Banner />
+      {/* {data?.length > 0 && (
         <div className="flex flex-col w-full gap-4 px-6 md:grid md:grid-cols-3 grid-row-auto md:px-12">
           {data?.map((event: any, index) => {
             return (
@@ -80,7 +80,7 @@ export default function Event() {
         </div>
       )}
       {/* <Banner /> */}
-      <div className="py-12 text-2xl text-center">
+      {/* <div className="py-12 text-2xl text-center">
         {loader && <h1>Loading ✨</h1>}
         {data === undefined && <h1>Sorry 🥺 there are no upcoming events</h1>}
       </div>
@@ -94,7 +94,7 @@ export default function Event() {
         >
           meetupswala.xyz
         </a>
-      </p>
+      </p>  */}
     </div>
   );
 }
