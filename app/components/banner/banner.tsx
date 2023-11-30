@@ -16,9 +16,11 @@ export default function Banner() {
             <h4 className="text-lg">8th DEC - 10th DEC 2023</h4>
             <h5 className="text-lg">KTPO, BENGALURU</h5>
           </div>
-          <h6 className="text-lg font-semibold">
-            World{"'"}s Biggest Ethereum Hackathon
-          </h6>
+          <a href="https://ethindia.co/" target="_blank">
+            <div className="text-lg text-white font-medium rounded-lg px-8 py-3 text center shadow-md bg-[#333333]">
+              World{"'"}s Biggest Ethereum Hackathon
+            </div>
+          </a>
         </div>
       </div>
     </div>
