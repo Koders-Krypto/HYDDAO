@@ -34,9 +34,9 @@ export default function Event() {
       .finally(() => setLoader(false));
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center gap-4 mt-6">
+    <div className="flex flex-col items-center justify-center gap-4 mt-8">
       <h1 className="text-3xl text-center">
-        Meet us at <strong>Unfold{"'"}23</strong> 🤝
+        Meet us at <strong>ETHIndia{"'"}23</strong>
       </h1>
       <Banner />
       {/* {data?.length > 0 && (
