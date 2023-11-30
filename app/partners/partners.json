@@ -1,107 +1,117 @@
 [
-    {
-        "name": "Dydx Foundation",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/dYdX-Foundation.png"
-    },
-    {
-        "name": "Emerging Technology",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Emerging-Technology.png"
-    },
-    {
-        "name": "Polygon",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Polygon.png"
-    },
-    {
-        "name": "CoinDCX",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/CoinDCX.png"
-    },
-    {
-        "name": "DevX",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/DevX-logo.png"
-    },
-    {
-        "name": "Filecoin",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Filecoin.png"
-    },
-    {
-        "name": "Hyperlane",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Hyperlane.png"
-    },
-    {
-        "name": "LBank",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/LBank.png"
-    },
-    {
-        "name": "Metamorphosis",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Metamorphosis.png"
-    },
-    {
-        "name": "Omniflix",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Omniflix-logo.png"
-    },
-    {
-        "name": "Polkadot",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Polkadot.png"
-    },
-    {
-        "name": "Starknet",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Starknet.png"
-    },
-    {
-        "name": "Shardeum",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Shardeum.png"
-    },
-    {
-        "name": "StackOS",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Stackos.png"
-    },
-    {
-        "name": "Web3Conf",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Web3Conf.png"
-    },
-    {
-        "name": "TPG",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/tpg.png"
-    },
-    {
-        "name": "Shipfinex",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Shipfinex-logo.png"
-    },
-    {
-        "name": "Social3",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Social3.png"
-    },
-    {
-        "name": "Web3Dubai",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Web3Dubai.png"
-    },
-    {
-        "name": "Davos",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Davos.png"
-    },
-    {
-        "name": "Blockchained-India",
-        "link": "https://dydx.exchange/",
-        "image": "/partners/Blockchained-India.png"
-    }
+  {
+    "name": "Dydx Foundation",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/dYdX-Foundation.png"
+  },
+  {
+    "name": "Emerging Technology",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Emerging-Technology.png"
+  },
+  {
+    "name": "Polygon",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Polygon.png"
+  },
+  {
+    "name": "CoinDCX",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/CoinDCX.png"
+  },
+  {
+    "name": "DevX",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/DevX-logo.png"
+  },
+  {
+    "name": "Filecoin",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Filecoin.png"
+  },
+  {
+    "name": "Hyperlane",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Hyperlane.png"
+  },
+  {
+    "name": "LBank",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/LBank.png"
+  },
+  {
+    "name": "Metamorphosis",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Metamorphosis.png"
+  },
+  {
+    "name": "Omniflix",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Omniflix-logo.png"
+  },
+  {
+    "name": "Polkadot",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Polkadot.png"
+  },
+  {
+    "name": "Starknet",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Starknet.png"
+  },
+  {
+    "name": "Shardeum",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Shardeum.png"
+  },
+  {
+    "name": "StackOS",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Stackos.png"
+  },
+  {
+    "name": "Web3Conf",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Web3Conf.png"
+  },
+  {
+    "name": "TPG",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/tpg.png"
+  },
+  {
+    "name": "Shipfinex",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Shipfinex-logo.png"
+  },
+  {
+    "name": "Social3",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Social3.png"
+  },
+  {
+    "name": "Web3Dubai",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Web3Dubai.png"
+  },
+  {
+    "name": "Davos",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Davos.png"
+  },
+  {
+    "name": "Blockchained-India",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/Blockchained-India.png"
+  },
+  {
+    "name": "ExaProtocol",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/ExaProtocol.png"
+  },
+  {
+    "name": "Qoneqt",
+    "link": "https://dydx.exchange/",
+    "image": "/partners/qoneqt.png"
+  }
 ]
