@@ -78,12 +78,7 @@ export default function Home() {
       <div id="partners">
         <Partners />
       </div>
-      <div id="events">
-        <Event />
-      </div>
-      <div id="Jobs">
-        <Jobs />
-      </div>
+
       <div id="Social">
         <Social />
       </div>
